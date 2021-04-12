@@ -19,7 +19,7 @@ const Hour = () => {
     return (
         <>
           <p>
-             <span>Current time:{time.second}:{time.minute}</span>
+             <span>Current time:{time.second}:{time.minute}:Toshkent</span>
              <span></span>
           </p>
         </>
