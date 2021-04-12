@@ -37,7 +37,7 @@ export default function Religion() {
 
   return (
     <div>
-      <h1>Books related to religion page</h1>
+      <h1 className='container'>Books related to religion page</h1>
       <List data={bookList} />
     </div>
   );

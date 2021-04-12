@@ -7,6 +7,7 @@ import travellogo1 from "../../assets/images/travellogo1.svg";
 
 const Footer = () => {
     return (
+<<<<<<< HEAD
         <footer className="container footer">
             <div className="footer-left">
                 <Link to="/home" className="footer-link footer-logo-link">
@@ -29,6 +30,9 @@ const Footer = () => {
                 <Link to="/connect" className="footer-link">Aloqa</Link>
             </div>
         </footer>
+=======
+        <h1 className='container'>Footer qo'shildi</h1>
+>>>>>>> a81b3d73132fd0d3f1fd6e4011d6b0765d310d9a
     )
 }
 
