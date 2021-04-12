@@ -12,6 +12,7 @@ const Item = ({ img, title, overview, release_date, vote_average }) => {
       </p>
     </div>
   );
+  
 };
 
 export default Item;
