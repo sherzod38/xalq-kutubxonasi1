@@ -3,7 +3,7 @@ import './Language.scss';
 const Language = () => {
     return (
         <div className="language">
-            <p>til o'zgartirish</p>
+            <p>Lotin  <span>Кирил</span></p>
         </div>
     )
 }
