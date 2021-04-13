@@ -1,9 +1,9 @@
 import './Footer.scss'
 import { Link } from "react-router-dom";
 import footerlogo from "../../assets/images/footerlogo.svg";
-import channellogo from "../../assets/images/channellogo.svg";
-import sitelogo from "../../assets/images/sitelogo.svg";
-import travellogo1 from "../../assets/images/travellogo1.svg";
+// import channellogo from "../../assets/images/channellogo.svg";
+// import sitelogo from "../../assets/images/sitelogo.svg";
+// import travellogo1 from "../../assets/images/travellogo1.svg";
 
 const Footer = () => {
     return (
