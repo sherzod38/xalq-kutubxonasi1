@@ -1,9 +1,9 @@
 import './Footer.scss'
 import { Link } from "react-router-dom";
 import footerlogo from "../../assets/images/footerlogo.svg";
-// import channellogo from "../../assets/images/channellogo.svg";
-// import sitelogo from "../../assets/images/sitelogo.svg";
-// import travellogo1 from "../../assets/images/travellogo1.svg";
+import channellogo from "../../assets/images/channellogo.svg";
+import sitelogo from "../../assets/images/sitelogo.svg";
+import travellogo1 from "../../assets/images/travellogo1.svg";
 
 const Footer = () => {
     return (
@@ -19,9 +19,9 @@ const Footer = () => {
             <div className="footer-center">
                 <p className="footer-text bold-text">Bizning loyihalarimiz</p>
                 <div className="footer-center-bottom">
-                    {/* <a href="https://www.azon.uz" className=" footer-link " rel="noopener noreferrer" target="_balnk"><img className="footer-img azon-site-logo" src={sitelogo} alt="logo" /></a>
-                    <a href="https://t.me/azonuztv_official" className=" footer-link channel-link" rel="noopener noreferrer" target="_blank"><img className="footer-img azon-channel-logo" src={channellogo} alt="logo" /></a>
-                    <a href="https://www.azon.uz" className=" footer-link" target="_blank"><img className="footer-img azon-travel-logo" src={travellogo1} alt="logo" /></a> */}
+                    <Link to="https://www.azon.uz" className=" footer-link " rel="noopener noreferrer" target="_balnk"><img className="footer-img azon-site-logo" src={sitelogo} alt="logo" /></Link>
+                    <Link to="https://t.me/azonuztv_official" className=" footer-link channel-link" rel="noopener noreferrer" target="_blank"><img className="footer-img azon-channel-logo" src={channellogo} alt="logo" /></Link>
+                    <Link to="https://www.azon.uz" className=" footer-link" target="_blank"><img className="footer-img azon-travel-logo" src={travellogo1} alt="logo" /></Link>
                 </div>
             </div>
             <div className="footer-right">
