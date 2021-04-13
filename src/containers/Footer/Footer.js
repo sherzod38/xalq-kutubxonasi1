@@ -19,9 +19,9 @@ const Footer = () => {
             <div className="footer-center">
                 <p className="footer-text bold-text">Bizning loyihalarimiz</p>
                 <div className="footer-center-bottom">
-                    <a href="https://www.azon.uz" className=" footer-link " rel="noopener noreferrer" target="_balnk"><img className="footer-img azon-site-logo" src={sitelogo} alt="logo" /></a>
+                    {/* <a href="https://www.azon.uz" className=" footer-link " rel="noopener noreferrer" target="_balnk"><img className="footer-img azon-site-logo" src={sitelogo} alt="logo" /></a>
                     <a href="https://t.me/azonuztv_official" className=" footer-link channel-link" rel="noopener noreferrer" target="_blank"><img className="footer-img azon-channel-logo" src={channellogo} alt="logo" /></a>
-                    <a href="https://www.azon.uz" className=" footer-link" target="_blank"><img className="footer-img azon-travel-logo" src={travellogo1} alt="logo" /></a>
+                    <a href="https://www.azon.uz" className=" footer-link" target="_blank"><img className="footer-img azon-travel-logo" src={travellogo1} alt="logo" /></a> */}
                 </div>
             </div>
             <div className="footer-right">
