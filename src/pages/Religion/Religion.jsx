@@ -37,7 +37,7 @@ export default function Religion() {
 
   return (
     <div>
-      <h1 className='container'>Badiy kitoblar</h1>
+      {/* <h1 className='container'>Badiy kitoblar</h1> */}
       <List data={bookList} />
     </div>
   );
