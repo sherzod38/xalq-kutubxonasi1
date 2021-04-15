@@ -8,7 +8,7 @@ const HeaderBottom = () => {
           <label className="header-bottom-inner-block-label" htmlFor="search">
             <input
               className="header-bottom-inner-block-label-input"
-              type="search"
+              type="text"
               id="search"
               name="main_search"
               placeholder="Izlash"
