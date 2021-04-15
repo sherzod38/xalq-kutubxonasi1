@@ -17,10 +17,10 @@ const HeaderMiddle = () => {
             className="header-middle-inner-navbar-link"
             to="/headerMiddle/badiy"
           >
-            Badiiy kitoblar
+            Diniy kitoblar
           </Link>
           <Link className="header-middle-inner-navbar-link" to="/religion">
-            Diniy kitoblar
+            Badiiy kitoblar
           </Link>
           <Link
             className="header-middle-inner-navbar-link"

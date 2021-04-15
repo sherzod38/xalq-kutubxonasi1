@@ -11,9 +11,9 @@ const List = ({ data }) => {
 
   console.log(data.data.results);
   return (
-    <Link className="book-card-list">
+    <Link className="book-card-list container" to="/">
       {data.data.results.map((book, index) => (
-        <Item {...book} />
+        <Item {...book} key={index} />
       ))}
     </Link>
   );
