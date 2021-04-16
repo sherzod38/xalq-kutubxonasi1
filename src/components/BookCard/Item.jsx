@@ -22,7 +22,7 @@ const Item = ({
   })
   return (
     <div className="book-card container" key={id}>
-      <img className='book-card-img' src={imgState ? `http://xalqkutubxonasi.herokuapp.com/images/${img}` : imgs} alt="" />
+      <img className='book-card-img' src={imgState ? `https://xalqkutubxonasi.herokuapp.com/images/${img}` : imgs} alt="" />
       <h3 className="book-card-name">{title}</h3>
       <p className="book-card-authors">
         {author ? author : "Muallifi"}
