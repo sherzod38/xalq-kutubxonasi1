@@ -14,7 +14,7 @@ const Item = ({
   vote_average,
 }) => {
   const [imgState, setImagestate] = useState('')
-  fetch(`http://xalqkutubxonasi.herokuapp.com/images/${img}`)
+  fetch(`https://xalqkutubxonasi.herokuapp.com/images/${img}`)
   .then(res => {
     if (res.status === 200) {
       setImagestate(true)
