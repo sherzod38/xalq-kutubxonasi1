@@ -1,21 +1,31 @@
+import { useState } from "react";
 import { Views, Like } from "../../assets/icons/Icons";
+import imgs from '../../assets/images/rasm.png'
 
 import "./BookCard.scss";
 
 const Item = ({
   id,
-  poster_path,
+  img,
   title,
+  
   vote_count,
-  release_date = "Muallifi",
+  author = "Muallifi",
   vote_average,
 }) => {
+  const [imgState, setImagestate] = useState('')
+  fetch(`http://xalqkutubxonasi.herokuapp.com/images/${img}`)
+  .then(res => {
+    if (res.status === 200) {
+      setImagestate(true)
+    }
+  })
   return (
     <div className="book-card container" key={id}>
-      <img className='book-card-img' src={`https://image.tmdb.org/t/p/w200/${poster_path}`} alt="" />
+      <img className='book-card-img' src={imgState ? `http://xalqkutubxonasi.herokuapp.com/images/${img}` : imgs} alt="" />
       <h3 className="book-card-name">{title}</h3>
-      <p className="book-card-views">
-        {release_date ? "Muallifi" : release_date}
+      <p className="book-card-authors">
+        {author ? author : "Muallifi"}
         {/* <span className="book-card-views-like">{vote_average}</span> */}
       </p>
       <p className="book-card-author">

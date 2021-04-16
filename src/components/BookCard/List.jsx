@@ -9,10 +9,10 @@ const List = ({ data }) => {
     return <div>loading...</div>;
   }
 
-  console.log(data.data.results);
+  console.log(data.data);
   return (
     <Link className="book-card-list container" to="/">
-      {data.data.results.map((book, index) => (
+      {data.data.map((book, index) => (
         <Item {...book} key={index} />
       ))}
     </Link>
