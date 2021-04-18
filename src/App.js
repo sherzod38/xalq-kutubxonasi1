@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Content from "./containers/Content";
 import Footer from "./containers/Footer";
+import Admin from "./admin/Admin";
+import RegistrPeyj from './pages/registration/RegistrPeyj'
 
 import "./assets/styles/main.scss";
 
@@ -19,6 +21,12 @@ function App() {
           <Switch>
             <Route path="/religion" exact>
               <Religion />
+            </Route>
+            <Route path="/admin" exact>
+              <Admin />
+            </Route>
+            <Route path="/kirish" exact>
+              <RegistrPeyj />
             </Route>
           </Switch>
         </Content>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { List } from "../../components/BookCard";
 import axios from "axios";
-import  API_BASE_URL  from "../../constants";
+import API_BASE_URL from "../../constants";
 
 export default function Religion() {
   const [bookList, setBookList] = useState({
@@ -12,7 +12,7 @@ export default function Religion() {
 
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/books/1/1`, {})
+      .get(`${API_BASE_URL}/api/books/3/1`, {})
       .then(function (response) {
         setBookList({
           isFetched: true,
