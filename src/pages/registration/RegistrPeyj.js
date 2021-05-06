@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 
 import RegForm1 from "../../components/regForm1";
 import RegForm2 from "../../components/regForm2";
@@ -9,6 +9,12 @@ import RegForm4 from "../../components/regForm4";
 import "./RegistrPeyj.scss";
 
 const RegistrPeyj = (props) => {
+  const history = useHistory();
+
+  const handleOnClick = (e) => {
+    e.preventDefault();
+    history.push("/auth/form2");
+  };
   return (
     <div className="registr">
       <div className="registr-section container">
@@ -21,7 +27,7 @@ const RegistrPeyj = (props) => {
             muammo bo'lsa Bog'lanish tugmasini bosing
           </p>
           <div className="registr-section-left-btn">
-            <button className="registr-section-left-btn-left">
+            <button onClick={handleOnClick} className="registr-section-left-btn-left">
               Ro‘yxatdan o‘tish
             </button>
             <button className="registr-section-left-btn-right">

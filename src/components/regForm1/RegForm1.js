@@ -13,6 +13,11 @@ const RegForm1 = () => {
   const history = useHistory();
   const { methods } = useContext(AdminPanel);
 
+  // const handleSubmit2 = (e) => {
+  //   e.preventDefault();
+  //   history.push("/auth/form2");
+  // };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -31,7 +36,8 @@ const RegForm1 = () => {
           history.push("/admin");
         })
         .catch(function (error) {
-          console.log(error);
+            history.push("/auth/form2");
+        
         });
     }
   };
