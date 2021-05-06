@@ -27,7 +27,7 @@ function App() {
 
         <Content>
           <Switch>
-            <Route path="/badiy" exact>
+            <Route path="/" exact>
               <Badiy />
             </Route>
             <Route path="/religion" exact>
