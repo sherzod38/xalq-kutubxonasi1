@@ -7,7 +7,7 @@ import Darkmout from "../../components/Darkmout";
 import Language from "../../components/Language/Language";
 
 const Facebook = "https://facebook.com";
-const Telegram = "https://t.me";
+// const Telegram = "https://t.me";
 const Instagram = "https://instagram.com";
 
 const HeaderTop = () => {
@@ -23,7 +23,7 @@ const HeaderTop = () => {
           <Link className="header-inner-right-link" to={Facebook}>
             Facebook
           </Link>
-          <Link className="header-inner-right-link" to={Telegram}>
+          <Link className="header-inner-right-link" to="#">
             Telegram
           </Link>
           <Link className="header-inner-right-link" to={Instagram}>

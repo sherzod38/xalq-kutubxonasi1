@@ -1,9 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Views, Like } from "../../assets/icons/Icons";
 import imgs from "../../assets/images/rasm.png";
 import API_BASE_URL from "../../constants";
-
-import "./BookCard.scss";
 
 const Item = ({
   id,
@@ -15,7 +13,7 @@ const Item = ({
   vote_average,
 }) => {
   return (
-    <div className="book-card container" key={id}>
+    <div className="book-card" key={id}>
       <img
         className="book-card-img"
         src={img ? `${API_BASE_URL}/images/${img}` : imgs}

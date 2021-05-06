@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { List } from "../../components/BookCard";
+import { BadiyList } from "../../components/BookCard";
 import axios from "axios";
-import API_BASE_URL from "../../constants";
 
-export default function Religion() {
+import API_BASE_URL from '../../constants'
+
+import "./Badiy";
+
+const Badiy = () => {
   const [bookList, setBookList] = useState({
     isFetched: false,
     data: [],
     error: null,
   });
-
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/api/books/2`, {})
+      .get(`${API_BASE_URL}/api/books/1`, {})
       .then(function (response) {
         setBookList({
           isFetched: true,
@@ -27,14 +29,11 @@ export default function Religion() {
           error: error,
         });
       });
-    //   .then(function () {
-        // always executed
-    //   });
   }, []);
+  return <div className="badiy">
+      <BadiyList data={bookList}/>
+  </div>;
 
-  return (
-    <div>
-      <List data={bookList} />
-    </div>
-  );
-}
+};
+
+export default Badiy;

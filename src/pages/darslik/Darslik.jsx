@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { List } from "../../components/BookCard";
+import { DarslikList } from "../../components/BookCard";
 import axios from "axios";
+
 import API_BASE_URL from "../../constants";
 
-export default function Religion() {
+const Darslik = () => {
   const [bookList, setBookList] = useState({
     isFetched: false,
     data: [],
@@ -12,7 +13,7 @@ export default function Religion() {
 
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/api/books/2`, {})
+      .get(`${API_BASE_URL}/api/books/3`, {})
       .then(function (response) {
         setBookList({
           isFetched: true,
@@ -27,14 +28,10 @@ export default function Religion() {
           error: error,
         });
       });
-    //   .then(function () {
-        // always executed
-    //   });
   }, []);
+  return <div className="ilmiy">
+      <DarslikList data={bookList}/>
+  </div>;
+};
 
-  return (
-    <div>
-      <List data={bookList} />
-    </div>
-  );
-}
+export default Darslik;

@@ -15,7 +15,7 @@ const HeaderMiddle = () => {
         <div className="header-middle-inner-navbar">
           <Link
             className="header-middle-inner-navbar-link"
-            to="/headerMiddle/badiy"
+            to="/badiy"
           >
             Badiiy kitoblar
           </Link>
@@ -24,20 +24,17 @@ const HeaderMiddle = () => {
           </Link>
           <Link
             className="header-middle-inner-navbar-link"
-            to="/headerMiddle/darslik"
+            to="/darslik"
           >
             Darslik kitoblar
           </Link>
           <Link
             className="header-middle-inner-navbar-link"
-            to="/headerMiddle/ilmiy"
+            to="/ilmiy"
           >
             Ilmiy
           </Link>
-          <Link
-            className="header-middle-inner-navbar-link"
-            to="/headerMiddle/kirish"
-          >
+          <Link className="header-middle-inner-navbar-link" to="/auth/form1">
             Kirish
           </Link>
 

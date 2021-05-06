@@ -1,42 +1,54 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { Switch, Route } from "react-router-dom";
 
-import HeaderTop from '../../Header/HeaderTop';
-import HeaderMiddle from '../../Header/HeaderMiddle';
+import RegForm1 from "../../components/regForm1";
+import RegForm2 from "../../components/regForm2";
+import RegForm3 from "../../components/regForm3";
+import RegForm4 from "../../components/regForm4";
 
-
-import './RegistrPeyj.scss';
-
+import "./RegistrPeyj.scss";
 
 const RegistrPeyj = (props) => {
-    return (
-        <div className="registr">
-            <div className="registr-header">
-                {/* <HeaderTop/>
-                <HeaderMiddle/> */}
-            </div>
-            <div className="section">
-                <div className="section-left">
-                    <h1>Izoh qoldirish uchun akkauntga kiring</h1>
-                    <p>
-                        The passage is attributed to an unknown typesetter
-                        in the 15th century who is thought to have scrambled
-                         parts of  for use in a type specimen book.
-                    </p>
-                    <div className="section-left-btn">
-                        <button className="section-left-btn-left">Ro‘yxatdan o‘tish</button>
-                        <button className="section-left-btn-right">Bog‘lanish</button>
-                    </div>
-                </div>
-                <form action="">
-                    <input type="text" placeholder='Ismingiz'/>
-                    <input type="text" name="" id="" placeholder='Telefon'/>
-                </form>
-            </div>
-
+  return (
+    <div className="registr">
+      <div className="registr-section container">
+        <div className="registr-section-left">
+          <h1>Izoh qoldirish uchun akkauntga kiring</h1>
+          <p>
+            Ro'yhatdan o'tgan bo'lsangiz ismingizni va telefon nomeringizni
+            kiriting va kirish tugmasini bosing agar ro'yhatdan o'tmagan
+            bo'lsangiz Ro'yhatdan o'tish tugmasini bosing ro'yhatdan o'tishda
+            muammo bo'lsa Bog'lanish tugmasini bosing
+          </p>
+          <div className="registr-section-left-btn">
+            <button className="registr-section-left-btn-left">
+              Ro‘yxatdan o‘tish
+            </button>
+            <button className="registr-section-left-btn-right">
+              Bog‘lanish
+            </button>
+          </div>
         </div>
-    )
-}
+        <div className="registr-section-right">
+          <Switch>
+            <Route path="/auth/form1" exact>
+              <RegForm1 />
+            </Route>
+            <Route path="/auth/form2" exact>
+              <RegForm2 />
+            </Route>
+            <Route path="/auth/form3" exact>
+              <RegForm3 />
+            </Route>
+            <Route path="/auth/form4" exact>
+              <RegForm4 />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 RegistrPeyj.propTypes = {};
 
