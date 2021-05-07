@@ -23,7 +23,7 @@ const HeaderTop = () => {
           <Link className="header-inner-right-link" to={Facebook}>
             Facebook
           </Link>
-          <Link className="header-inner-right-link" to="#">
+          <Link className="header-inner-right-link" to="/book-info">
             Telegram
           </Link>
           <Link className="header-inner-right-link" to={Instagram}>

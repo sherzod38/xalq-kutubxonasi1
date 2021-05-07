@@ -7,9 +7,8 @@ const Item = ({
   id,
   img,
   title,
-
-  vote_count,
   author = "Muallifi",
+  vote_count,
   vote_average,
 }) => {
   return (

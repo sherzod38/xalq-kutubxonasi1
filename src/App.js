@@ -8,11 +8,13 @@ import Footer from "./containers/Footer";
 
 import Admin from "./admin/Admin";
 
-import RegistrPeyj from "./pages/registration/RegistrPeyj";
+// import RegistrPeyj from "./pages/registration/RegistrPeyj";
 import Ilmiy from "./pages/ilmiy/Ilmiy";
 import Badiy from "./pages/badiy/Badiy";
 import Darslik from "./pages/darslik/Darslik";
+import Leyout from "./leyout";
 import * as AuthContext from "./context/Auth";
+import BookPages from "./pages/bookPages/BookPages";
 
 import "./assets/styles/main.scss";
 
@@ -22,33 +24,39 @@ function App() {
   return (
     <div className="App">
       <AuthContext.Provider>
-      <Router>
-        <Header />
-
-        <Content>
+        <Router>
           <Switch>
-            <Route path="/" exact>
-              <Badiy />
-            </Route>
-            <Route path="/religion" exact>
-              <Religion />
-            </Route>
-            <Route path="/darslik" exact>
-              <Darslik />
-            </Route>
-            <Route path="/ilmiy" exact>
-              <Ilmiy />
-            </Route>
-            <Route path="/admin" exact>
-              <Admin />
-            </Route>
             <Route path="/auth">
-              <RegistrPeyj />
+              <Leyout />
+            </Route>
+            <Route>
+              <div className="main-layout">
+                <Header />
+                <Content>
+                  <Route path="/" exact>
+                    <Badiy />
+                  </Route>
+                  <Route path="/religion" exact>
+                    <Religion />
+                  </Route>
+                  <Route path="/darslik" exact>
+                    <Darslik />
+                  </Route>
+                  <Route path="/ilmiy" exact>
+                    <Ilmiy />
+                  </Route>
+                  <Route path="/admin" exact>
+                    <Admin />
+                  </Route>
+                  <Route path="/book-info">
+                    <BookPages />
+                  </Route>
+                </Content>
+                <Footer />
+              </div>
             </Route>
           </Switch>
-        </Content>
-        <Footer />
-      </Router>
+        </Router>
       </AuthContext.Provider>
     </div>
   );
