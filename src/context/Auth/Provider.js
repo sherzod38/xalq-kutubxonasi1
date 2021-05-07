@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import AuthContext, { initialAuthContext } from "./context";
+import data from "../../components/data/data";
 
 const Provider = ({ children }) => {
   const [value, setValue] = React.useState({ ...initialAuthContext });
+  const [lang, setLang] = useState(localStorage.getItem("lang") || "Lotin")
 
   const setToken = (token) => {
     setValue({ ...value, token });
@@ -11,7 +13,10 @@ const Provider = ({ children }) => {
 
   const values = {
     value,
+    data,
+    lang,
     methods: {
+      setLang,
       setToken,
     },
   };

@@ -1,10 +1,11 @@
 import './Darkmout.scss'
 
-const Darkmout = () => {
+const Darkmout = ({rejim1,rejim2}) => {
     return (
-        <div className="darkmout">
-            <p className="darkmout-text">Tungi rejim</p>
-        </div>
+        <select className="darkmout">
+            <option defaultValue className="darkmout-text">{rejim1}</option>
+            <option className="darkmout-text">{rejim2}</option>
+        </select>
     )
 }
 

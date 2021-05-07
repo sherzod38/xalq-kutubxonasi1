@@ -6,5 +6,4 @@ export const initialAuthContext = {
 };
 
 const AuthContext = React.createContext(initialAuthContext);
-
 export default AuthContext;

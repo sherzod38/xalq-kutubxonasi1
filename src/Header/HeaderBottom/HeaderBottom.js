@@ -1,6 +1,10 @@
 import "./HeaderBottom.scss";
+import AuthContext from "../../context/Auth/context";
+import { useContext } from "react";
+
 
 const HeaderBottom = () => {
+  const {data,lang} = useContext(AuthContext)
   return (
     <div className="header-bottom">
       <div className="header-bottom-inner container">
@@ -11,7 +15,7 @@ const HeaderBottom = () => {
               type="text"
               id="search"
               name="main_search"
-              placeholder="Izlash"
+              placeholder={(data.find(i => i.script === lang)).search}
             />
           </label>
           <button className="header-bottom-inner-block-button" type="button">
@@ -26,39 +30,58 @@ const HeaderBottom = () => {
             className="header-bottom-inner-select-option"
             value="fiction"
           >
-              Badiiy kitoblar
+              {
+                (data.find(i => i.script === lang)).badiiy
+              }
           </option>
           <option
             className="header-bottom-inner-select-option"
             value="religious"
           >
-              Diniy kitoblar
+             {
+               (data.find(i => i.script === lang)).diniy
+             }
+
           </option>
           <option
             className="header-bottom-inner-select-option"
             value="textbook"
           >
-              Darslik kitoblar
+            {
+              (data.find(i => i.script === lang)).darslik
+            }
           </option>
           <option
             className="header-bottom-inner-select-option"
-            value="scientific"
-          >
-              Ilmiy
+            value="scientific">
+            {
+              (data.find(i => i.script === lang)).ilmiy
+            }
           </option>
         </select>
         <select className="header-bottom-inner-select" name="change_language_select" id="change-language_select">
           <option className="header-bottom-inner-select-option" value="uzbek">
-            O'zbekcha
+            {
+              (data.find(i => i.script === lang)).uz
+            }
           </option>
           <option className="header-bottom-inner-select-option" value="arabic">
-            Arabcha
+
+               {
+                 (data.find(i => i.script === lang)).arab
+               }
           </option>
           <option className="header-bottom-inner-select-option" value="russia">
-            Russia
+
+               {
+                 (data.find(i => i.script === lang)).rus
+               }
           </option>
           <option className="header-bottom-inner-select-option" value="english">
-            English
+
+               {
+                 (data.find(i => i.script === lang)).eng
+               }
           </option>
         </select>
       </div>

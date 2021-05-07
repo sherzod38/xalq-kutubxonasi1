@@ -1,9 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { useRef, useContext } from "react";
 import axios from "axios";
-
 import AdminPanel from "../../context/Auth/context";
-
 import "./RegForm1.scss";
 
 const RegForm1 = () => {
@@ -37,7 +35,7 @@ const RegForm1 = () => {
         })
         .catch(function (error) {
             history.push("/auth/form2");
-        
+
         });
     }
   };

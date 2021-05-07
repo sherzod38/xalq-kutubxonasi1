@@ -8,7 +8,7 @@ import Footer from "./containers/Footer";
 
 import Admin from "./admin/Admin";
 
-// import RegistrPeyj from "./pages/registration/RegistrPeyj";
+
 import Ilmiy from "./pages/ilmiy/Ilmiy";
 import Badiy from "./pages/badiy/Badiy";
 import Darslik from "./pages/darslik/Darslik";
