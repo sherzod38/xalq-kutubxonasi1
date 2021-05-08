@@ -33,7 +33,7 @@ const HeaderTop = () => {
           <Link className="header-inner-right-link" to={Facebook}>
            {(data.find( i => i.script === lang)).facebook}
           </Link>
-          <Link className="header-inner-right-link" to="/book-info">
+          <Link className="header-inner-right-link" to="/leyout2">
 
             {
               (data.find(i => i.script === lang)).telegram

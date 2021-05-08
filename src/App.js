@@ -15,6 +15,7 @@ import Darslik from "./pages/darslik/Darslik";
 import Leyout from "./leyout";
 import * as AuthContext from "./context/Auth";
 import BookPages from "./pages/bookPages/BookPages";
+import Leyout2 from "./leyout2";
 
 import "./assets/styles/main.scss";
 
@@ -28,6 +29,9 @@ function App() {
           <Switch>
             <Route path="/auth">
               <Leyout />
+            </Route>
+            <Route path="/leyout2">
+              <Leyout2 />
             </Route>
             <Route>
               <div className="main-layout">
