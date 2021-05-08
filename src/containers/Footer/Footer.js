@@ -4,8 +4,11 @@ import footerlogo from "../../assets/images/footerlogo.svg";
 import channellogo from "../../assets/images/channellogo.svg";
 import sitelogo from "../../assets/images/sitelogo.svg";
 import travellogo1 from "../../assets/images/travellogo1.svg";
+import AuthContext from "../../context/Auth/context";
+import { useContext } from "react";
 
 const Footer = () => {
+  const {data,lang} = useContext(AuthContext)
   return (
     <footer className="container footer">
       <div className="footer-left">
@@ -19,7 +22,7 @@ const Footer = () => {
         <p className="footer-text footer-copyright">All rights reserved 2020</p>
       </div>
       <div className="footer-center">
-        <p className="footer-text bold-text">Bizning loyihalarimiz</p>
+        <p className="footer-text bold-text">{(data.find(item => item.script === lang)).project}</p>
         <div className="footer-center-bottom">
           <Link
             to=""
@@ -64,11 +67,16 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <Link to="/about" className="footer-link about-us">
-          {" "}
-          Biz haqimizda
+
+
+          {
+            (data.find(item => item.script === lang)).about
+          }
         </Link>
         <Link to="/connect" className="footer-link">
-          Aloqa
+         {
+           (data.find(item => item.script === lang)).aloqa
+         }
         </Link>
       </div>
     </footer>

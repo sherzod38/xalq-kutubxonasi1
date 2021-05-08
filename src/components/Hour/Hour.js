@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Hour.scss'
 
-const Hour = () => {
+const Hour = ({city}) => {
     const [time,setTime] = useState({second: "",minute: ""})
     function Gettime() {
      setInterval(() => {
@@ -19,7 +19,7 @@ const Hour = () => {
     return (
         <>
           <p>
-             <span>{time.second}:{time.minute}:Toshkent</span>
+             <span>{time.second}:{time.minute},{city}</span>
              <span></span>
           </p>
         </>
