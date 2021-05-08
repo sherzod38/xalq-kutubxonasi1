@@ -30,7 +30,7 @@ function App() {
             <Route path="/auth">
               <Leyout />
             </Route>
-            <Route path="/leyout2">
+            <Route path="/book/:id">
               <Leyout2 />
             </Route>
             <Route>

@@ -1,5 +1,11 @@
-import { Link } from 'react-router-dom'
+import { useEffect, useState} from 'react'
+
+import axios from 'axios'
+
+import { Link, useParams } from 'react-router-dom'
 import { Item } from '../../components/BookCard';
+
+import API_BASE_URL from '../../constants'
 
 // import List from "../../components/BookCard/List";
 import img1 from '../../assets/images/rasm1.png'
@@ -12,6 +18,33 @@ import user from '../../assets/images/icons/user.png'
 import "./BookPages.scss";
 
 const BookPages = () => {
+
+const {id} = useParams();
+    const [book, setBook] = useState({
+        isFetched: false,
+        data: {},
+        error: null,
+      });
+    
+      useEffect(() => {
+        axios
+          .get(`${API_BASE_URL}/api/books/3/${id}`, {})
+          .then(function (response) {
+            setBook({
+              isFetched: true,
+              data: response.data,
+              error: false,
+            });
+          })
+          .catch(function (error) {
+            setBook({
+              isFetched: true,
+              data: [],
+              error: error,
+            });
+          });
+      }, [id]);
+      console.log(book)
   return (
     <div className="book">
         <div className="book-inner container">

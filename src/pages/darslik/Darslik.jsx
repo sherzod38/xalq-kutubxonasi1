@@ -29,9 +29,11 @@ const Darslik = () => {
         });
       });
   }, []);
-  return <div className="ilmiy">
-      <DarslikList data={bookList}/>
-  </div>;
+  return (
+    <div className="ilmiy">
+      <DarslikList data={bookList} />
+    </div>
+  );
 };
 
 export default Darslik;
