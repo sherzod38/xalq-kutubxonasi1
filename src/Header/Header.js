@@ -1,21 +1,17 @@
-
-
 // import classes from './Header.module.scss'
 
-import HeaderTop from './HeaderTop';
-import HeaderMiddle from './HeaderMiddle';
-import HeaderBottom from './HeaderBottom';
+import HeaderTop from "./HeaderTop";
+import HeaderMiddle from "./HeaderMiddle";
+import HeaderBottom from "./HeaderBottom";
 
-
-const Header = () => {
-    return (
-        <>
-          <HeaderTop/>
-          <HeaderMiddle/>
-          <HeaderBottom/>
-        </>
-
-    )
-}
+const Header = ({searchText, setSearchText}) => {
+  return (
+    <>
+      <HeaderTop />
+      <HeaderMiddle />
+      <HeaderBottom {...{ searchText, setSearchText }} />
+    </>
+  );
+};
 
 export default Header;

@@ -3,7 +3,7 @@ import { useEffect, useState} from 'react'
 import axios from 'axios'
 
 import { Link, useParams } from 'react-router-dom'
-import { Item } from '../../components/BookCard';
+// import { Item } from '../../components/BookCard';
 
 import API_BASE_URL from '../../constants'
 
@@ -14,6 +14,7 @@ import facebook from '../../assets/images/icons/facebook.svg'
 import instagram from '../../assets/images/icons/instagram.svg'
 import telegram from '../../assets/images/icons/telegram.svg'
 import user from '../../assets/images/icons/user.png'
+import SearchPage from '../searchPage';
 
 import "./BookPages.scss";
 
@@ -45,7 +46,9 @@ const {id} = useParams();
           });
       }, [id]);
       console.log(book)
+      
   return (
+
     <div className="book">
         <div className="book-inner container">
             <div className="book-inner-location">
@@ -54,7 +57,7 @@ const {id} = useParams();
             <div className="book-inner-block">
                 <div className="book-inner-block-left">
                     <h4>Taklif qilamiz</h4>
-                    <Item className='book-inner-block-left-item'/>
+                    <SearchPage className='book-inner-block-left-item'/>
                     <button>barchasini ko‘rish</button>
                 </div>
                 <div className="book-inner-block-right">

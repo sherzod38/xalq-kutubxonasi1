@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy, useState} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./Header";
@@ -8,7 +8,6 @@ import Footer from "./containers/Footer";
 
 import Admin from "./admin/Admin";
 
-
 import Ilmiy from "./pages/ilmiy/Ilmiy";
 import Badiy from "./pages/badiy/Badiy";
 import Darslik from "./pages/darslik/Darslik";
@@ -16,12 +15,16 @@ import Leyout from "./leyout";
 import * as AuthContext from "./context/Auth";
 import BookPages from "./pages/bookPages/BookPages";
 import Leyout2 from "./leyout2";
+import SearchPage from "./pages/searchPage";
 
 import "./assets/styles/main.scss";
 
 const Religion = lazy(() => import("./pages/Religion"));
 
 function App() {
+  const [searchText, setSearchText] = useState("");
+
+
   return (
     <div className="App">
       <AuthContext.Provider>
@@ -35,8 +38,11 @@ function App() {
             </Route>
             <Route>
               <div className="main-layout">
-                <Header />
+                <Header searchText={searchText} setSearchText={setSearchText} />
                 <Content>
+                  <Route path="/book-info/:searchText">
+                    <SearchPage />
+                  </Route>
                   <Route path="/" exact>
                     <Badiy />
                   </Route>

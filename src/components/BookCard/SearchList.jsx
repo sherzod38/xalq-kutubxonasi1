@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom";
+
 
 import Item from "./Item";
 
-const IlmiyList = ({ data }) => {
+const SearchList = ({ data }) => {
   if (!data.isFetched) {
     return <div>loading...</div>;
   }
 
  
   return (
-    <Link className="book-card-list container" to="/">
+    <div className="">
       {data.data.map((book, index) => (
         <Item {...book} key={index} />
       ))}
-    </Link>
+    </div>
   );
 };
 
-export default IlmiyList;
+export default SearchList;
