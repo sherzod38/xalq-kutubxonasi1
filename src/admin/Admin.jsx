@@ -68,7 +68,7 @@ function Admin(props) {
         />
         </label>
         <label htmlFor="">
-          Kitob summarysi
+          Kitob haqida
         <input
           className="adminka-form-summary"
           type="text"
@@ -108,7 +108,7 @@ function Admin(props) {
         </select>
         </label>
         <label htmlFor="">
-          kitobni data bazaga joylash 
+          kitobni bazaga joylash 
           <button className="adminka-form-btn">submit</button>
         </label>
       </form>

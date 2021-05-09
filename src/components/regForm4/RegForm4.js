@@ -1,10 +1,18 @@
+import { useHistory } from 'react-router-dom'
+
 import "./RegForm4.scss";
 
 const RegForm4 = () => {
+
+  const history = useHistory()
   
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push('/')
+  }
   return (
     <div className="form4">
-      <form className="form4-form" action="">
+      <form className="form4-form" action="" onSubmit={handleSubmit}>
         <h3>Siz ro'yhatdan o'tdingiz</h3>
         <input
           className="form4-form-input1"

@@ -21,7 +21,7 @@ const RegistrPeyj = (props) => {
         <div className="registr-section-left">
           <h1>Izoh qoldirish uchun akkauntga kiring</h1>
           <p>
-            Ro'yhatdan o'tgan bo'lsangiz ismingizni va telefon nomeringizni
+            Ro'yhatdan o'tgan bo'lsangiz ismingizni va telefon raqamingizni
             kiriting va kirish tugmasini bosing agar ro'yhatdan o'tmagan
             bo'lsangiz Ro'yhatdan o'tish tugmasini bosing ro'yhatdan o'tishda
             muammo bo'lsa Bog'lanish tugmasini bosing

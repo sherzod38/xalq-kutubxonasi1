@@ -18,6 +18,7 @@ import Leyout2 from "./leyout2";
 import SearchPage from "./pages/searchPage";
 
 import "./assets/styles/main.scss";
+import Show from "./components/show";
 
 const Religion = lazy(() => import("./pages/Religion"));
 
@@ -61,6 +62,7 @@ function App() {
                   <Route path="/book-info">
                     <BookPages />
                   </Route>
+                <Show/>
                 </Content>
                 <Footer />
               </div>

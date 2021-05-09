@@ -9,11 +9,11 @@ import AuthContext from "../../context/Auth/context";
 import "./HeaderBottom.scss";
 
 
-const HeaderBottom = ({searchText, setSearchText}) => {
+const HeaderBottom = ({searchText, setSearchText}, id) => {
   const history = useHistory();
   const {data,lang} = useContext(AuthContext)
   function handleClick() {
-    history.push("/book-info");
+    history.push(`/book/${id}`);
   }
   return (
     <div className="header-bottom">
