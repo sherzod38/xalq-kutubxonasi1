@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import Item from "./Item";
 
@@ -9,11 +9,11 @@ const IlmiyList = ({ data }) => {
 
  
   return (
-    <Link className="book-card-list container" to="/">
+    <div className="book-card-list container">
       {data.data.map((book, index) => (
         <Item {...book} key={index} />
       ))}
-    </Link>
+    </div>
   );
 };
 

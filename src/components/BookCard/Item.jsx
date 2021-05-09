@@ -14,7 +14,7 @@ const Item = ({
 }) => {
   return (
     <div className="book-card" key={id}>
-      <Link to={`/book/${id}`}>
+      <Link className='book-card-link' to={`/book/${id}`}>
       <img
         className="book-card-img"
         src={img ? `${API_BASE_URL}/images/${img}` : imgs}
