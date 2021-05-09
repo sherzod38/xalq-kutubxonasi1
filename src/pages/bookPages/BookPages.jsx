@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-import axios from "axios";
+// import axios from "axios";
 
-import { Link, useParams } from "react-router-dom";
-// import { Item } from '../../components/BookCard';
+import { Link, useLocation } from "react-router-dom";
 
 import API_BASE_URL from "../../constants";
 
-// import List from "../../components/BookCard/List";
+
 import img1 from "../../assets/images/rasm1.png";
 // import like from '../../assets/images/icons/like.svg'
 import facebook from "../../assets/images/icons/facebook.svg";
@@ -15,36 +14,40 @@ import instagram from "../../assets/images/icons/instagram.svg";
 import telegram from "../../assets/images/icons/telegram.svg";
 // import user from '../../assets/images/icons/user.png'
 import SearchPage from "../searchPage";
-
 import "./BookPages.scss";
-
+import moment from "moment";
 const BookPages = () => {
-  const { id } = useParams();
-  const [book, setBook] = useState({
-    isFetched: false,
-    data: {},
-    error: null,
-  });
+  const { state } = useLocation();
+  console.log(state.props);
+  const { ...props } = state.props;
+  //   const {...params} = state.props
+  //   const { id } = useParams();
+  //   console.log(state);
+  //   const [book, setBook] = useState({
+  //     isFetched: false,
+  //     data: {},
+  //     error: null,
+  //   });
 
-  useEffect(() => {
-    axios
-      .get(`${API_BASE_URL}/api/books/3/${id}`, {})
-      .then(function (response) {
-        setBook({
-          isFetched: true,
-          data: response.data,
-          error: false,
-        });
-      })
-      .catch(function (error) {
-        setBook({
-          isFetched: true,
-          data: [],
-          error: error,
-        });
-      });
-  }, [id]);
-  console.log(book);
+  //   useEffect(() => {
+  //     axios
+  //       .get(`${API_BASE_URL}/api/books/3/${id}`, {})
+  //       .then(function (response) {
+  //         setBook({
+  //           isFetched: true,
+  //           data: response.data,
+  //           error: false,
+  //         });
+  //       })
+  //       .catch(function (error) {
+  //         setBook({
+  //           isFetched: true,
+  //           data: [],
+  //           error: error,
+  //         });
+  //       });
+  //   }, [id]);
+  //   console.log(book);
 
   return (
     <div className="book">
@@ -60,36 +63,38 @@ const BookPages = () => {
           </div>
           <div className="book-inner-block-right">
             <p className="book-inner-block-right-sana">
-              Qo’shilgan sana: 21/02/2020
+              Qo’shilgan sana:{" "}
+              {moment(props.added).format("DD/MM/YY | HH:MM:SS")}
             </p>
             <div className="book-inner-block-right-row">
               <div className="book-inner-block-right-row-information">
                 <div className="book-inner-block-right-row-information-left">
-                  <img src={img1} alt="" />
+                  <img className="book-inner-block-right-row-information-left-img" src={props.img ? `${API_BASE_URL}/images/${props.img}` : img1} alt="" />
+                  {/* <span>{props.img}</span> */}
                 </div>
                 <div className="book-inner-block-right-row-information-right">
                   <h2 className="book-inner-block-right-row-information-right-title">
-                    Otamdan qolgan dalalar
+                    {props.title}
                   </h2>
                   <div className="book-inner-block-right-row-information-right-author">
                     <div className="book-inner-block-right-row-information-right-author-authors">
                       <span>Muallif:</span>
-                      <p>Tog’ay Murod</p>
+                      <p>{props.author}</p>
                     </div>
                     <div className="book-inner-block-right-row-information-right-author-authors">
                       <span>Hajmi:</span>
-                      <p>168 bet</p>
-                    </div>
-                    <div className="book-inner-block-right-row-information-right-author-authors">
-                      <span>Nashr qilingan yili:</span>
-                      <p>2015</p>
+                      <p>{props.page} bet</p>
                     </div>
                   </div>
                   <div className="book-inner-block-right-row-information-right-author">
                     <div className="book-inner-block-right-row-information-right-author-authors">
+                      <span>Nashr qilingan yili:</span>
+                      <p>{props.release}</p>
+                    </div>
+                    {/* <div className="book-inner-block-right-row-information-right-author-authors">
                       <span>Ko’rishlar soni:</span>
                       <p>1802 marta</p>
-                    </div>
+                    </div> */}
                     {/* <div className="book-inner-block-right-row-information-right-author-authors">
                                             <span>Holat:</span>
                                             <h3 className="book-inner-block-right-row-information-right-author-authors-busu">Bo’sh</h3>
@@ -113,25 +118,7 @@ const BookPages = () => {
               <h3 className="book-inner-block-right-row-summary">
                 Kitob tavsifi
               </h3>
-              <p className="book-inner-block-right-row-text">
-                Keyingi yillar romanchiligining yuksalishda Tog’ay Murodning
-                alohida o’rni mavjud. Adib 70-yillardayoq adabiyotimizga yorqin
-                yulduz kabi kirib keldi. Uning ilk qissa va hikoyalari o’z
-                davridayoq yuksak baholangan. Istedodli yozuvchi Tog’ay
-                Murodning “Ot kishnagan oqshom” hikoya va qissalardan iborat ilk
-                to’plamidagi xarakterlar yaratish san’atini hayot
-                haqiqatinibadiiy tahlil qilish va uslubini namoyon qila olgan
-                adib sifatida nasrimiz yuksalishini yana bir cho’qqi sari
-                etaklaganligi adabiy tanqidchilikda o’z ifodasini haqqoni
-                bahosini olmoqda. Adabiyot jamiyat vijdoni, badiiy so’z
-                san’atkorligi anashu vijdonni harakatga keltirib turishday
-                ma’suliyatli burchni ado qilar ekan ular yurak sadolari
-                yozuvchilik vijdoni, hayqiriqlariga quloq solishga majburdirlar
-                anshu xususiyatlarini o’zida tom ma’noda mujassamlashtirgan
-                adiblardan biri Tog’ay Muroddir. Ammo shu o’ringa sobiq
-                sho’rolar davri ularning inson hayotidagi fojialarga ne chog’lik
-                sababachi bo’lganligiga diqqat qilsak.
-              </p>
+              <p className="book-inner-block-right-row-text">{props.summary}</p>
               <div className="book-inner-block-right-row-comment">
                 {/* <div className="book-inner-block-right-row-comment-left">
                                 <h5>Izoh qoldiring!</h5>

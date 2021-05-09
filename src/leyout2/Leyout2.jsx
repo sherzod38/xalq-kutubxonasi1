@@ -1,12 +1,7 @@
 import HeaderTop from "../Header/HeaderTop";
 import HeaderMiddle from "../Header/HeaderMiddle";
-import BookPages from '../pages/bookPages'
-import Footer from '../containers/Footer'
-
-
-
-
-
+import BookPages from "../pages/bookPages";
+import Footer from "../containers/Footer";
 
 import "./Leyout2.scss";
 
@@ -18,7 +13,7 @@ const Leyout2 = () => {
       <div className="leyout2-inner">
         <BookPages />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

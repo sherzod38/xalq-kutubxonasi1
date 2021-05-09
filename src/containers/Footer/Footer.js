@@ -25,7 +25,7 @@ const Footer = () => {
         <p className="footer-text bold-text">{(data.find(item => item.script === lang)).project}</p>
         <div className="footer-center-bottom">
           <Link
-            to=""
+            to="#"
             className="footer-link"
             onClick={() => {
               window.open("https://www.azon.uz");
@@ -38,7 +38,7 @@ const Footer = () => {
             />
           </Link>
           <Link
-            to=""
+            to="#"
             className="footer-link channel-link"
             onClick={() => {
               window.open("https://azontravel.uz");
@@ -51,7 +51,7 @@ const Footer = () => {
             />
           </Link>
           <Link
-            to=""
+            to="#"
             onClick={() => {
               window.open("https://www.azonkitoblari.uz");
             }}

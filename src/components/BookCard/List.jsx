@@ -9,7 +9,7 @@ const List = ({ data }) => {
     return <div>loading...</div>;
   }
 
-  console.log(data.data);
+  // console.log(data.data);
   return (
     <div className="book-card-list container">
       {data.data.map((book, index) => (

@@ -12,7 +12,7 @@ const HeaderMiddle = () => {
   return (
     <div className="header-middle">
       <div className="header-middle-inner container">
-        <Link to="">
+        <Link to="#">
           <img src={logo} alt="" />
         </Link>
         <div className="header-middle-inner-navbar">
