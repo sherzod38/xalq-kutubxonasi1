@@ -10,14 +10,14 @@ const SearchPage = () => {
     data: [],
     error: null,
   });
-
+  // console.log(bookList.data);
   useEffect(() => {
     axios
       .get(`${API_BASE_URL}/api/books/4`, {})
       .then(function (response) {
         setBookList({
           isFetched: true,
-          data: response.data,
+          data: response.data.slice(0, 3),
           error: false,
         });
       })
@@ -29,10 +29,11 @@ const SearchPage = () => {
         });
       });
   }, []);
-  return <div className="search">
-      <SearchList data={bookList}/>
-  </div>;
+  return (
+    <div className="search">
+      <SearchList data={bookList} />
+    </div>
+  );
 };
 
 export default SearchPage;
-
