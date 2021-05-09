@@ -19,7 +19,7 @@ const Hour = ({city}) => {
     return (
         <>
           <p>
-             <span>{time.second}:{time.minute},{city}</span>
+             <span>{time.second}:{time.minute} | {city}</span>
              <span></span>
           </p>
         </>
