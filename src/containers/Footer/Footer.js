@@ -1,9 +1,9 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import footerlogo from "../../assets/images/footerlogo.svg";
-import channellogo from "../../assets/images/channellogo.svg";
-import sitelogo from "../../assets/images/sitelogo.svg";
-import travellogo1 from "../../assets/images/travellogo1.svg";
+import azonuz from "../../assets/images/icons/azonuz.svg";
+import azontravel from "../../assets/images/icons/azontravel.svg";
+import azonkitoblari from "../../assets/images/icons/azonkitoblari.svg";
 import AuthContext from "../../context/Auth/context";
 import { useContext } from "react";
 
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="container footer">
       <div className="footer-left">
-        <Link to="/home" className="footer-link footer-logo-link">
+        <Link to="/" className="footer-link footer-logo-link">
           <img
             className="footer-img footer-logo-img"
             src={footerlogo}
@@ -33,7 +33,7 @@ const Footer = () => {
           >
             <img
               className="footer-img azon-site-logo"
-              src={sitelogo}
+              src={azonuz}
               alt="logo"
             />
           </Link>
@@ -41,25 +41,25 @@ const Footer = () => {
             to=""
             className="footer-link channel-link"
             onClick={() => {
-              window.open("https://t.me/azonuztv_official");
+              window.open("https://azontravel.uz");
             }}
           >
             <img
               className="footer-img azon-channel-logo"
-              src={channellogo}
+              src={azontravel}
               alt="logo"
             />
           </Link>
           <Link
             to=""
             onClick={() => {
-              window.open("https://www.azon.uz");
+              window.open("https://www.azonkitoblari.uz");
             }}
             className=" footer-link"
           >
             <img
               className="footer-img azon-travel-logo"
-              src={travellogo1}
+              src={azonkitoblari}
               alt="logo"
             />
           </Link>
