@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { BadiyList } from "../../components/BookCard";
 import axios from "axios";
 
-import API_BASE_URL from '../../constants'
+import API_BASE_URL from "../../constants";
+import Pagination from "../../components/Pagination";
 
 import "./Badiy";
 
@@ -12,15 +13,16 @@ const Badiy = () => {
     data: [],
     error: null,
   });
+  const [activePage, setActivePage] = useState(1);
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/api/books/1`, {})
+      .get(`${API_BASE_URL}/api/books/1/${activePage}`)
       .then(function (response) {
-        setBookList({
+        setBookList((prev) => ({
           isFetched: true,
-          data: response.data,
+          data: [...prev.data, ...response.data],
           error: false,
-        });
+        }));
       })
       .catch(function (error) {
         setBookList({
@@ -29,11 +31,17 @@ const Badiy = () => {
           error: error,
         });
       });
-  }, []);
-  return <div className="badiy">
-      <BadiyList data={bookList}/>
-  </div>;
+  }, [activePage]);
+  const activePageChanger = (page) => {
+    setActivePage(page);
+  };
 
+  return (
+    <div className="badiy">
+      <BadiyList data={bookList} />
+      <Pagination activePage={activePage} setActivePage={activePageChanger} />
+    </div>
+  );
 };
 
 export default Badiy;

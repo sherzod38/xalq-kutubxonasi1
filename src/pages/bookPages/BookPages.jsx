@@ -47,7 +47,7 @@ const BookPages = () => {
   //         });
   //       });
   //   }, [id]);
-  //   console.log(book);
+    // console.log(book);
 
   return (
     <div className="book">

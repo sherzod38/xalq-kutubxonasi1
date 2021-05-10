@@ -3,6 +3,7 @@ import { DarslikList } from "../../components/BookCard";
 import axios from "axios";
 
 import API_BASE_URL from "../../constants";
+import Pagination from "../../components/Pagination";
 
 const Darslik = () => {
   const [bookList, setBookList] = useState({
@@ -10,16 +11,16 @@ const Darslik = () => {
     data: [],
     error: null,
   });
-
+  const [activePage, setActivePage] = useState(1);
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/api/books/3`, {})
+      .get(`${API_BASE_URL}/api/books/3/${activePage}`)
       .then(function (response) {
-        setBookList({
+        setBookList((prev) => ({
           isFetched: true,
-          data: response.data,
+          data: [...prev.data, ...response.data],
           error: false,
-        });
+        }));
       })
       .catch(function (error) {
         setBookList({
@@ -28,10 +29,14 @@ const Darslik = () => {
           error: error,
         });
       });
-  }, []);
+  }, [activePage]);
+  const activePageChanger = (page) => {
+    setActivePage(page);
+  };
   return (
     <div className="ilmiy">
       <DarslikList data={bookList} />
+      <Pagination activePage={activePage} setActivePage={activePageChanger} />
     </div>
   );
 };

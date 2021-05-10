@@ -9,7 +9,7 @@ const BadiyList = ({ data }) => {
     return <div>loading...</div>;
   }
 
-  // console.log(data.data);
+  console.log(data.data);
   return (
     <Link className="book-card-list container" to="/">
       {data.data.map((book, index) => (
