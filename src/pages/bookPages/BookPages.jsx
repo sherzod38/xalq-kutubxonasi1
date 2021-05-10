@@ -85,12 +85,13 @@ const BookPages = () => {
                       <span>Hajmi:</span>
                       <p>{props.page} bet</p>
                     </div>
-                  </div>
-                  <div className="book-inner-block-right-row-information-right-author">
                     <div className="book-inner-block-right-row-information-right-author-authors">
                       <span>Nashr qilingan yili:</span>
                       <p>{props.release}</p>
                     </div>
+                  </div>
+                  <div className="book-inner-block-right-row-information-right-author">
+                    
                     {/* <div className="book-inner-block-right-row-information-right-author-authors">
                       <span>Ko’rishlar soni:</span>
                       <p>1802 marta</p>
