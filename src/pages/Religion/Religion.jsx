@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { List } from "../../components/BookCard";
 import axios from "axios";
+
 import API_BASE_URL from "../../constants";
+import Pagination from "../../components/Pagination";
 
 export default function Religion() {
   const [bookList, setBookList] = useState({
@@ -9,16 +11,17 @@ export default function Religion() {
     data: [],
     error: null,
   });
+  const [activePage, setActivePage] = useState(1);
 
   useEffect(() => {
     axios
-      .get(`${API_BASE_URL}/api/books/2`, {})
+      .get(`${API_BASE_URL}/api/books/2/${activePage}`)
       .then(function (response) {
-        setBookList({
+        setBookList((prev) => ({
           isFetched: true,
-          data: response.data,
+          data: [...prev.data, ...response.data],
           error: false,
-        });
+        }));
       })
       .catch(function (error) {
         setBookList({
@@ -28,13 +31,17 @@ export default function Religion() {
         });
       });
     //   .then(function () {
-        // always executed
+    // always executed
     //   });
-  }, []);
+  }, [activePage]);
+  const activPageChanger = (page) => {
+    setActivePage(page);
+  };
 
   return (
     <div>
       <List data={bookList} />
+      <Pagination activePage={activePage} setActivePage={activPageChanger}/>
     </div>
   );
 }
