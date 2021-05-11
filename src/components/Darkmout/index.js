@@ -1,1 +1,1 @@
-export {default} from './Darkmout'
+export {default} from './Darkmout.jsx'

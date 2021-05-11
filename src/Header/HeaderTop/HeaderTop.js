@@ -25,7 +25,7 @@ const HeaderTop = () => {
         </div>
         <div className="header-inner-right">
           <Language />
-          <Darkmout rejim1={(data.find(i => i.script === lang)).day}
+          <Darkmout rounded={true} rejim1={(data.find(i => i.script === lang)).day}
           rejim2 = {
             (data.find(i => i.script === lang)).night
           }
