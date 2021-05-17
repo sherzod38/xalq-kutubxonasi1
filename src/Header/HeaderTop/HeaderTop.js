@@ -9,8 +9,8 @@ import AuthContext from "../../context/Auth/context";
 
 
 
-const Facebook = "https://facebook.com";
-const Instagram = "https://instagram.com";
+// const Facebook = "https://facebook.com";
+// const Instagram = "https://instagram.com";
 
 const HeaderTop = () => {
   const {data,lang} = useContext(AuthContext)
@@ -30,7 +30,7 @@ const HeaderTop = () => {
             (data.find(i => i.script === lang)).night
           }
            />
-          <Link className="header-inner-right-link" to={Facebook}>
+          <Link className="header-inner-right-link" to='#'>
            {(data.find( i => i.script === lang)).facebook}
           </Link>
           <Link className="header-inner-right-link" to="#">
@@ -39,7 +39,7 @@ const HeaderTop = () => {
               (data.find(i => i.script === lang)).telegram
             }
           </Link>
-          <Link className="header-inner-right-link" to={Instagram}>
+          <Link className="header-inner-right-link" to='#'>
 
             {
               (data.find(i => i.script === lang)).instagram
