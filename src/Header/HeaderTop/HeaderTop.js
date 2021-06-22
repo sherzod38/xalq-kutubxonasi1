@@ -30,16 +30,33 @@ const HeaderTop = () => {
             (data.find(i => i.script === lang)).night
           }
            />
-          <Link className="header-inner-right-link" to='#'>
+          <Link
+            className="header-inner-right-link"
+            to='#'
+            onClick={() => {
+              window.open("https://www.facebook.com");
+            }}>
            {(data.find( i => i.script === lang)).facebook}
           </Link>
-          <Link className="header-inner-right-link" to="#">
+          <Link
+            className="header-inner-right-link"
+            to="#"
+            onClick={() => {
+              window.open("https://www.t.me/Azonkitoblari");
+            }}
+            >
 
             {
               (data.find(i => i.script === lang)).telegram
             }
           </Link>
-          <Link className="header-inner-right-link" to='#'>
+          <Link
+            className="header-inner-right-link"
+            to='#'
+            onClick={() => {
+              window.open("https://www.instagram.com");
+            }}
+            >
 
             {
               (data.find(i => i.script === lang)).instagram
