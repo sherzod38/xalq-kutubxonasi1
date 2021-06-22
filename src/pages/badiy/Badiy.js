@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination";
 import "./Badiy";
 
 const Badiy = (props) => {
-  const [bookList, setBookList] = useState({
+  const [ setBookList] = useState({
     isFetched: false,
     data: [],
     error: null,
