@@ -6,8 +6,6 @@ import Item from "./Item";
 // import "./BookCard.scss";
 
 const BadiyList = ({ data }) => {
-
-  console.log(data);
   return (
     <div className="book-card-list container">
       {data.map((book, index) => (

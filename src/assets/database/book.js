@@ -115,7 +115,7 @@
     },
     {
         "id": 35,
-        "img": "http://127.0.0.1:5501/jurnal/photo_2021-02-23_17-56-40.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/photo_2021-02-23_17-56-40.jpg",
         "author": "Zayniddin Muhammad G'azzoliy",
         "title": "Kimiyoi Saodat",
         "type": "diniy"
@@ -167,7 +167,7 @@
     },
     {
         "id": 50,
-        "img": "http://127.0.0.1:5501/images/darsliklar/matematika3.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/matematika3.jpg",
         "author": "",
         "title": "Matematika",
         "page": "314",
@@ -194,7 +194,7 @@
     },
     {
         "id": 53,
-        "img": "http://127.0.0.1:5501/images/darsliklar/english5.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/english5.jpg",
         "author": "",
         "title": "English 8",
         "type": "darslik"
@@ -202,7 +202,7 @@
     },
     {
         "id": 54,
-        "img": "http://127.0.0.1:5501/images/darsliklar/dinshunoslik1.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/dinshunoslik1.jpg",
         "author": "A Mo'minov",
         "title": "Dinshunoslik",
         "type": "darslik",
@@ -211,7 +211,7 @@
     },
     {
         "id": 55,
-        "img": "http://127.0.0.1:5501/images/darsliklar/islomTarihi2.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/islomTarihi2.jpg",
         "author": "A Xasanov",
         "title": "Islom tarixi",
         "type": "darslik"
@@ -219,7 +219,7 @@
     },
     {
         "id": 56,
-        "img": "http://127.0.0.1:5501/images/darsliklar/english7.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/english7.jpg",
         "author": "",
         "title": "Hippy English",
         "type": "darslik"
@@ -227,7 +227,7 @@
     },
     {
         "id": 57,
-        "img": "http://127.0.0.1:5501/images/darsliklar/biologiya10.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/biologiya10.jpg",
         "author": "",
         "title": "Umumiy Biologiya 10-11",
         "type": "darslik"
@@ -235,7 +235,7 @@
     },
     {
         "id": 58,
-        "img": "http://127.0.0.1:5501/images/darsliklar/onaTilidanMaruzalar1.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/onaTilidanMaruzalar1.jpg",
         "author": "Nilufar Rasulova",
         "title": "Ona tilildan Ma'ruzalar",
         "type": "darslik"
@@ -243,7 +243,7 @@
     },
     {
         "id": 59,
-        "img": "http://127.0.0.1:5501/images/darsliklar/adabiyot1.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/adabiyot1.jpg",
         "author": "Orzigul Hamroeva",
         "title": "Adabiyot",
         "type": "darslik"
@@ -251,7 +251,7 @@
     },
     {
         "id": 60,
-        "img": "http://127.0.0.1:5501/images/darsliklar/geometriya1.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/geometriya1.jpg",
         "author": "M Usmonov",
         "title": "Geometriya Matematikadan Ma'lumotnoma 2-qism",
         "type": "darslik"
@@ -267,7 +267,7 @@
     },
     {
         "id": 76,
-        "img": "http://127.0.0.1:5501/jurnal/hilol.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/hilol.jpg",
         "author": "",
         "title": "Hilol 2019-yil 5-son",
         "type": "ilmiy"
@@ -275,7 +275,7 @@
     },
     {
         "id": 77,
-        "img": "http://127.0.0.1:5501/jurnal/IslomNURI.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/IslomNURI.jpg",
         "author": "",
         "title": "Islom nuri 2017-yil 24-son",
         "type": "ilmiy"
@@ -283,15 +283,15 @@
     },
     {
         "id": 78,
-        "img": "http://127.0.0.1:5501/jurnal/hidoyat2.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/hidoyat2.jpg",
         "author": "",
-        "title": "Hidoyat 2013-yil 13-son",
+        "title": "Hidoyat 2013-yil 12-son",
         "type": "ilmiy"
 
     },
     {
         "id": 79,
-        "img": "http://127.0.0.1:5501/jurnal/hilol1.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/hilol1.jpg",
         "author": "",
         "title": "Hilol 2020-yil 2-son",
         "type": "ilmiy"
@@ -299,7 +299,7 @@
     },
     {
         "id": 80,
-        "img": "http://127.0.0.1:5501/jurnal/hilol2.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/hilol2.jpg",
         "author": "",
         "title": "Hilol 2020-yil 3-son",
         "type": "ilmiy"
@@ -307,7 +307,7 @@
     },
     {
         "id": 100,
-        "img": "http://127.0.0.1:5501/jurnal/hidoyat.jpg",
+        "img": "https://tender-fermat-a23d4d.netlify.app/jurnal/hidoyat.jpg",
         "author": "",
         "title": "Hidoyat 2020-yil 4-son",
         "type": "ilmiy"

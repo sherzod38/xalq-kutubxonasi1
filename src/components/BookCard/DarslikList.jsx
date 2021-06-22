@@ -7,8 +7,6 @@ const DarslikList = ({ data }) => {
   if (!data.isFetched) {
     return <div>loading...</div>;
   }
-
-  console.log(data.data);
   return (
     <div className="book-card-list container">
       {Data.filter(i => i.type === 'darslik').map((book, index) => (
