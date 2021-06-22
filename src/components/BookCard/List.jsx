@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 
 import Item from "./Item";
+import Data from '../../assets/database/book.json'
 
 import "./BookCard.scss";
 
@@ -12,7 +13,7 @@ const List = ({ data }) => {
   // console.log(data.data);
   return (
     <div className="book-card-list container">
-      {data.data.map((book, index) => (
+      {Data.filter(i => i.type === 'diniy').map((book, index) => (
         <Item {...book} key={index} />
       ))}
     </div>

@@ -2,12 +2,13 @@
 
 // import axios from "axios";
 
-import { Link, useLocation } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import Data from '../../assets/database/book.json'
 
-import API_BASE_URL from "../../constants";
+// import API_BASE_URL from "../../constants";
 
 
-import img1 from "../../assets/images/rasm1.png";
+// import img1 from "../../assets/images/rasm1.png";
 // import like from '../../assets/images/icons/like.svg'
 import facebook from "../../assets/images/icons/facebook.svg";
 import instagram from "../../assets/images/icons/instagram.svg";
@@ -17,9 +18,8 @@ import SearchPage from "../searchPage";
 import "./BookPages.scss";
 import moment from "moment";
 const BookPages = () => {
-  const { state } = useLocation();
-  console.log(state.props);
-  const { ...props } = state.props;
+  const { id } = useParams();
+  const props = Data.find(item => item.id.toString() === id);
   //   const {...params} = state.props
   //   const { id } = useParams();
   //   console.log(state);
@@ -53,7 +53,7 @@ const BookPages = () => {
     <div className="book">
       <div className="book-inner container">
         <div className="book-inner-location">
-          <p>Badiiy kitoblar | Otamdan qolgan dalalar</p>
+          {/* <p>Badiiy kitoblar | Otamdan qolgan dalalar</p> */}
         </div>
         <div className="book-inner-block">
           <div className="book-inner-block-left">
@@ -69,7 +69,7 @@ const BookPages = () => {
             <div className="book-inner-block-right-row">
               <div className="book-inner-block-right-row-information">
                 <div className="book-inner-block-right-row-information-left">
-                  <img className="book-inner-block-right-row-information-left-img" src={props.img ? `${API_BASE_URL}/images/${props.img}` : img1} alt="" />
+                  <img className="book-inner-block-right-row-information-left-img" src={props.img } alt="" />
                   {/* <span>{props.img}</span> */}
                 </div>
                 <div className="book-inner-block-right-row-information-right">

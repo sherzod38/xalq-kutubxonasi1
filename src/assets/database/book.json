@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/adabiy/alishernavoit.jpg",
+        "author": "Alisher Navoiy",
+        "title": "Tanlangan asarlar",
+        "type": "badiy"
+
+    },
+    {
+        "id": 2,
+        "img": "/",
+        "author": "Azamat Qorjovov",
+        "title": "Qil ustidagi taqdir",
+        "type": "badiy"
+
+    },
+    {
+        "id": 3,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/adabiy/nafs.jpg",
+        "author": "Tohir Malik",
+        "title": "Nafs kishanlari",
+        "type": "badiy"
+
+    },
+    {
+        "id": 4,
+        "img": "/",
+        "author": "Shaytanat",
+        "title": "Tohir Malik",
+        "type": "badiy"
+
+    },
+    {
+        "id": 26,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/siyrat.jpg",
+        "author": "Balqiz Aladdin",
+        "title": "Muhammad payg'ambar alayhissalom qissasi",
+        "type": "diniy"
+
+    },
+    {
+        "id": 27,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/tafsir4.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Tafsiri hilol 30 Amma porasi",
+        "type": "diniy"
+
+    },
+    {
+        "id": 28,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/tafsir3.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Tafsiri hilol 20-21 poralar",
+        "type": "diniy"
+
+    },
+    {
+        "id": 29,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/tafsir2.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Tafsiri hilol 19-20 poralar",
+        "type": "diniy"
+
+    },
+    {
+        "id": 29,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/tafsir1.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Tafsiri hilol 17-18 poralar",
+        "type": "diniy"
+
+    },
+    {
+        "id": 30,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/zikr1.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Zikr ahlidan so'rang 4",
+        "type": "diniy"
+
+    },
+    {
+        "id": 31,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/zikr2.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Zikr ahlidan so'rang 5",
+        "type": "diniy"
+
+    },
+    {
+        "id": 32,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/namoz_kitob1.jpg",
+        "author": "Abdulhakim qori Komiljon o'g'li",
+        "title": "Namoz ibodati arkonlari",
+        "type": "diniy"
+
+    },
+    {
+        "id": 33,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/asriy.jpg",
+        "author": "Abdulhamid Zayriev, Sayyora Saidova",
+        "title": "Asriy tahdiddan manaviy himoya",
+        "page": "214",
+        "type": "diniy"
+
+    },
+    {
+        "id": 34,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/qabrhayoti.jpg",
+        "author": "Xasan Zakariyo Fulayful",
+        "title": "Qabr hayoti azobmi yo rohat",
+        "type": "diniy"
+
+    },
+    {
+        "id": 35,
+        "img": "http://127.0.0.1:5501/jurnal/photo_2021-02-23_17-56-40.jpg",
+        "author": "Zayniddin Muhammad G'azzoliy",
+        "title": "Kimiyoi Saodat",
+        "type": "diniy"
+
+    },
+    {
+        "id": 36,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/Tafsir/fiqhiy.jpg",
+        "author": "Shayx MuhammadSodiq MuhammadYusuf",
+        "title": "Fiqhiy yo'nalish va kitoblar",
+        "page": "314",
+        "release": "2010",
+        "summary": "Bu kitob ",
+        "type": "diniy"
+
+    },
+    {
+        "id": 51,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/matem1.jpg",
+        "author": "M Usmonov",
+        "title": "Matematikadan repitetor 1-qism",
+        "type": "darslik"
+
+    },
+    {
+        "id": 52,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/matem2.jpg",
+        "author": "M Usmonov",
+        "title": "Matematikadan repitetor 2-qism",
+        "type": "darslik"
+
+    },
+    {
+        "id": 53,
+        "img": "https://tender-fermat-a23d4d.netlify.app/images/darsliklar/imtihondan1.jpg",
+        "author": "Zebiniso Ahmedova",
+        "title": "Imtihondan albatta o'tasiz agar",
+        "type": "darslik"
+
+    }
+]

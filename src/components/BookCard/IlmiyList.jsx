@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 
 import Item from "./Item";
+import Data from '../../assets/database/book.json'
 
 const IlmiyList = ({ data }) => {
   if (!data.isFetched) {
@@ -10,7 +11,7 @@ const IlmiyList = ({ data }) => {
  
   return (
     <div className="book-card-list container">
-      {data.data.map((book, index) => (
+      {Data.filter(i => i.type === 'ilmiy').map((book, index) => (
         <Item {...book} key={index} />
       ))}
     </div>

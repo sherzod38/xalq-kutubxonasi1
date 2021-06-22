@@ -1,6 +1,7 @@
 
 
 import Item from "./Item";
+import Data from '../../assets/database/book.json'
 
 const SearchList = ({ data }) => {
   if (!data.isFetched) {
@@ -10,7 +11,7 @@ const SearchList = ({ data }) => {
  
   return (
     <div className="">
-      {data.data.map((book, index) => (
+      {Data.map((book, index) => (
         <Item {...book} key={index} />
       ))}
     </div>

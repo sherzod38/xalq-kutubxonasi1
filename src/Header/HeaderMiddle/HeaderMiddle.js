@@ -42,13 +42,14 @@ const HeaderMiddle = () => {
           </Link>
           <Link className="header-middle-inner-navbar-link" to="/auth/form1">
 
-            {
+            {/* {
               (data.find(i => i.script === lang)).enter
-            }
+            } */}
           </Link>
 
           <Switch>
             <Route exact patch="/"></Route>
+            
           </Switch>
         </div>
       </div>

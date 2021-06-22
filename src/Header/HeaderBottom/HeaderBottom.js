@@ -37,7 +37,7 @@ const HeaderBottom = ({searchText, setSearchText}, id) => {
             </svg>
           </button>
         </div>
-        <select className="header-bottom-inner-select" name="book_type_select" id="book-type-select">
+        {/* <select className="header-bottom-inner-select" name="book_type_select" id="book-type-select">
           <option
             className="header-bottom-inner-select-option"
             value="fiction"
@@ -95,7 +95,7 @@ const HeaderBottom = ({searchText, setSearchText}, id) => {
                  (data.find(i => i.script === lang)).eng
                }
           </option>
-        </select>
+        </select> */}
       </div>
     </div>
   );

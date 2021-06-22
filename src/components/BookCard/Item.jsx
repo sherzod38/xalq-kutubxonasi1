@@ -1,8 +1,8 @@
 // import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Views, Like } from "../../assets/icons/Icons";
-import imgs from "../../assets/images/rasm.png";
-import API_BASE_URL from "../../constants";
+// import imgs from "../../assets/images/rasm.png";
+// import API_BASE_URL from "../../constants";
 
 const Item = (props) => {
   // {`/book/${id}`}
@@ -19,7 +19,8 @@ const Item = (props) => {
       >
         <img
           className="book-card-img"
-          src={props.img ? `${API_BASE_URL}/images/${props.img}` : imgs}
+          // src={props.img ? `${API_BASE_URL}/images/${props.img}` : imgs}
+          src={props.img  }
           alt=""
         />
         <h3 className="book-card-name">{props.title}</h3>
