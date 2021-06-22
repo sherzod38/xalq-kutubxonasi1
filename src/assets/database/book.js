@@ -1,4 +1,4 @@
-[
+ const data = [
     {
         "id": 1,
         "img": "https://tender-fermat-a23d4d.netlify.app/images/adabiy/alishernavoit.jpg",
@@ -314,3 +314,5 @@
 
     }
 ]
+
+export default data;

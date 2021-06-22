@@ -20,10 +20,13 @@ import SearchPage from "./pages/searchPage";
 import "./assets/styles/main.scss";
 // import Show from "./components/show";
 
+import initialData from './assets/database/book'
+
 const Religion = lazy(() => import("./pages/Religion"));
 
 function App() {
   const [searchText, setSearchText] = useState("");
+  const [data] = useState(initialData)
 
 
   return (
@@ -45,7 +48,7 @@ function App() {
                     <SearchPage />
                   </Route>
                   <Route path="/" exact>
-                    <Badiy />
+                    <Badiy data={data.filter(i => i.type === "badiy")} />
                   </Route>
                   <Route path="/religion" exact>
                     <Religion />

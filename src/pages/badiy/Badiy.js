@@ -7,7 +7,7 @@ import Pagination from "../../components/Pagination";
 
 import "./Badiy";
 
-const Badiy = () => {
+const Badiy = (props) => {
   const [bookList, setBookList] = useState({
     isFetched: false,
     data: [],
@@ -38,7 +38,7 @@ const Badiy = () => {
 
   return (
     <div className="badiy">
-      <BadiyList data={bookList} />
+      <BadiyList data={props.data} />
       <Pagination activePage={activePage} setActivePage={activePageChanger} />
     </div>
   );

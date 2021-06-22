@@ -5,7 +5,7 @@ import axios from "axios";
 
 import API_BASE_URL from "../../constants";
 
-const SearchPage = () => {
+const SearchPage = (props) => {
   const [bookList, setBookList] = useState('');
   console.log(bookList.data);
   useEffect(() => {
@@ -28,7 +28,7 @@ const SearchPage = () => {
   }, []);
   return (
     <div className="search">
-      <SearchList data={bookList} />
+      <SearchList type={props.type}  />
     </div>
   );
 };

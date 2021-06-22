@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 
 import Item from "./Item";
-import Data from '../../assets/database/book.json'
+import Data from '../../assets/database/book'
 
 const DarslikList = ({ data }) => {
   if (!data.isFetched) {

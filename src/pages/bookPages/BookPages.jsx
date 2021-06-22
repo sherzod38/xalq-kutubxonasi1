@@ -3,7 +3,7 @@
 // import axios from "axios";
 
 import { Link, useParams } from "react-router-dom";
-import Data from '../../assets/database/book.json'
+import Data from '../../assets/database/book'
 
 // import API_BASE_URL from "../../constants";
 
@@ -58,13 +58,13 @@ const BookPages = () => {
         <div className="book-inner-block">
           <div className="book-inner-block-left">
             <h4>Taklif qilamiz</h4>
-            <SearchPage className="book-inner-block-left-item" />
+            <SearchPage type={props.type} className="book-inner-block-left-item" />
             {/* <button>barchasini ko‘rish</button> */}
           </div>
           <div className="book-inner-block-right">
             <p className="book-inner-block-right-sana">
               Qo’shilgan sana:{" "}
-              {moment(props.added).format("DD/MM/YY | HH:MM:SS")}
+              {moment().format("DD/MM/YY | HH:MM:SS")}
             </p>
             <div className="book-inner-block-right-row">
               <div className="book-inner-block-right-row-information">
