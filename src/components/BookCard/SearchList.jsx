@@ -11,7 +11,7 @@ const SearchList = ({ data }) => {
  
   return (
     <div className="">
-      {Data.map((book, index) => (
+      {Data.splice(0, 3).map((book, index) => (
         <Item {...book} key={index} />
       ))}
     </div>

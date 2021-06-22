@@ -59,7 +59,7 @@ const BookPages = () => {
           <div className="book-inner-block-left">
             <h4>Taklif qilamiz</h4>
             <SearchPage className="book-inner-block-left-item" />
-            <button>barchasini ko‘rish</button>
+            {/* <button>barchasini ko‘rish</button> */}
           </div>
           <div className="book-inner-block-right">
             <p className="book-inner-block-right-sana">
